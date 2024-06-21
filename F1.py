@@ -201,6 +201,28 @@ print(f'DBSCAN - Davies-Bouldin Index: {dbscan_davies_bouldin}')
 
 
 
+# Création du scatter plot pour visualiser les clusters
+plt.figure(figsize=(10, 6))
+colors = ['yellow', 'blue', 'green', 'red', 'purple', 'orange'][:optimal_k]
+for cluster in range(optimal_k):
+    cluster_points = df[df['cluster'] == cluster]
+    plt.scatter(cluster_points['haut_tot'], cluster_points['tronc_diam'], 
+                c=colors[cluster], label=f'Cluster {cluster}', alpha=0.6)
+
+plt.xlabel('Hauteur Totale')
+plt.ylabel('Diamètre du Tronc')
+plt.title('Diamètre du Tronc en fonction de la Hauteur Totale')
+plt.legend()
+plt.show()
+
+
+
+
+
+
+
+
+
 # Initialisation de la carte centrée sur la moyenne des coordonnées
 center_lat = df['latitude'].mean()
 center_lon = df['longitude'].mean()
