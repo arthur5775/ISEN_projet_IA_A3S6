@@ -1,6 +1,6 @@
 RQ: RandomForest_model.pkl impossile d'upload sur github car "Yowza, that’s a big file. Try again with a file smaller than 25MB."
 
-Github: https://github.com/arthur5775/projet_IA_A3S6/blob/main/ReadMe.txt
+Github: https://github.com/arthur5775/projet_IA_A3S6/tree/main
 
 Projet de Classification et de Clustering d'Arbres
 Ce projet contient des scripts pour la classification et le clustering d'arbres en utilisant des techniques d'apprentissage automatique. 
